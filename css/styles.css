@@ -1,0 +1,215 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/food.jpg') no-repeat center center/cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #faffff;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Features Section */
+#features {
+    background-image: linear-gradient(to bottom, #687148, #608164, #5e8f82, #699b9f, #80a5b5, #88afc4, #91b8d2, #9cc2e1, #8bd0f0, #77dff8, #64eef9, #5ffbf1);
+    padding: 50px 0;
+    height: 70vh;
+}
+
+
+#features .card {
+    border: none;
+    height: 175%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#features .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#features .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 12%;
+}
+
+#features .card-text {
+    color: #666;
+    margin-top: 7%;
+}
+
+/* About Section */
+#about {
+    padding: 10px 0; /* Reduced padding */
+    background-image: linear-gradient(to right top, #fff6fb, #f1e7f0, #e1d9e5, #d0cbdb, #bebed1, #b5bed6, #a8bfdb, #99c0dd, #8acfec, #76def5, #65edf7, #5ffbf1);
+    height: 75vh;
+}
+
+#about img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 60%; /* Ensures proper scaling */
+    margin-left: 15%;
+}
+
+#about h2 {
+    margin-top: 20%;
+    font-size: 1.8rem; /* Slightly smaller font size */
+    margin-bottom: 15px;
+}
+
+#about p {
+    margin-top: 8%;
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #555;
+    line-height: 1.6; /* Slightly reduced line height */
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+#contact form .form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#contact form .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#contact form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ed9595;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    color: #ed9595;
+}
+
+/* Scroll-To-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    #features .card {
+        margin-bottom: 20px;
+    }
+}
+
